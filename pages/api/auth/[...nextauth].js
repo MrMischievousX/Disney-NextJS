@@ -13,6 +13,7 @@ export const authOptions = {
     // ...add more providers here
   ],
   adapter: FirebaseAdapter(db),
+  secret: process.env.SECRET,
 };
 
 export default NextAuth(authOptions);
